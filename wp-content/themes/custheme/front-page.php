@@ -12,31 +12,22 @@
  * @package custheme
  */
 
-//$background_image = get_field( "background_image" );
-
 get_header();
-get_template_part( 'template-parts/flexible/content', 'work_with_us' );
+
 ?>
 
-    <section class="hero" style="background-image:url(<?php echo '' ?>)">
 
-        <div class="hero-caption">
-            <h2>We are a leading manufacturer of separators for lead-acid batteries.</h2>
-        </div>
-    </section>
 
 <?php if ( have_rows( 'content' ) ): ?>
 	<?php while ( have_rows( 'content' ) ): the_row(); ?>
 
-		<?php if ( get_row_layout() == 'column_section' ):?>
-            <?php get_template_part('parts/section' ,'columns');?>
+		<?php if ( get_row_layout() == 'hero' ):?>
+			<?php get_template_part('template-parts/flexible/content' ,'hero');?>
+		<?php endif; ?>
+		<?php if ( get_row_layout() == 'featured' ):?>
+			<?php get_template_part('template-parts/flexible/content' ,'featured');?>
 		<?php endif; ?>
 
-		<?php if ( get_row_layout() == 'textarea_with_image' ):?>
-			<?php get_template_part('parts/section' ,'textwithimage');?>
-		<?php endif; ?>
-
-        <?php get_template_part('template-parts/flexible','work_with_us') ;?>
 
 	<?php endwhile; ?>
 <?php endif; ?>
@@ -44,3 +35,4 @@ get_template_part( 'template-parts/flexible/content', 'work_with_us' );
 
 <?php
 get_footer();
+
