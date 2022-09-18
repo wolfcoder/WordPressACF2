@@ -1,0 +1,351 @@
+.company-timeline {
+    padding:18px 40px;
+    background: #FBFBFB;
+    box-shadow: 0px 2px 8px 3px rgba(19, 19, 19, 0.08);
+    border-radius: 5px;
+    max-width: 1300px;
+    margin:auto;
+    margin-bottom: 51px;
+
+    .sparator {
+        width: 100%;
+        margin-top:286px;
+        margin-bottom: 48px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 48px;
+        /* or 160% */
+
+        letter-spacing: -2.25px;
+        text-transform: uppercase;
+
+        color: #204E9D;
+    }
+
+    .timeline-content {
+        &.desktop {
+            display: block;
+            position: relative;
+            .icon-timeline {
+                position: absolute;
+                background-color: #fff;
+                left: 0px;
+                z-index: 999;
+            }
+
+            .icon-timeline-2 {
+                position: absolute;
+                background-color: #fff;
+                right: 0px;
+                z-index: 999;
+
+            }
+
+            .timeline {
+                width:100%;
+                height: 11px;
+                list-style: none;
+                // text-align: justify;
+                margin: 183px auto;
+                padding-right: 40px;
+                // background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(45%, rgba(255,255,255,0)), color-stop(51%, rgba(191,128,11,1)), color-stop(57%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,0)));
+                // background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 45%, rgba(191,128,11,1) 51%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%);
+                // border-bottom:2px dashed #000;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                --border-color: #000;
+                --border-weight: 2px;
+                --dash-size: 5px;
+                --gap-size: 10px;
+                
+                position: relative;
+                height: 2px;
+
+                &:after {
+                    transition: all .6s ease;
+                    content:'';
+                    position: absolute;
+                    height: 2px;
+                    top: 10px;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: 
+                        linear-gradient(90deg, var(--border-color) 100%, transparent 100%) top left no-repeat,
+                        linear-gradient(90deg, transparent calc(var(--gap-size) / 2), var(--border-color) calc(var(--gap-size) / 2), var(--border-color) calc(var(--gap-size) / 2 + var(--dash-size)), transparent calc(var(--gap-size) / 2 + var(--dash-size))) top center repeat-x,
+                        linear-gradient(90deg, var(--border-color) 100%, transparent 100%) top right no-repeat,
+                        
+                        linear-gradient(0deg, var(--border-color) 100%, transparent 100%) top left no-repeat,
+                        linear-gradient(0deg, transparent calc(var(--gap-size) / 2), var(--border-color) calc(var(--gap-size) / 2), var(--border-color) calc(var(--gap-size) / 2 + var(--dash-size)), transparent calc(var(--gap-size) / 2 + var(--dash-size))) center left repeat-y,
+                        linear-gradient(0deg, var(--border-color) 100%, transparent 100%) bottom left no-repeat,
+                        
+                        linear-gradient(90deg, var(--border-color) 100%, transparent 100%) bottom left no-repeat,
+                        linear-gradient(90deg, transparent calc(var(--gap-size) / 2), var(--border-color) calc(var(--gap-size) / 2), var(--border-color) calc(var(--gap-size) / 2 + var(--dash-size)), transparent calc(var(--gap-size) / 2 + var(--dash-size))) bottom center repeat-x,
+                        linear-gradient(90deg, var(--border-color) 100%, transparent 100%) bottom right no-repeat,
+                        
+                        linear-gradient(0deg, var(--border-color) 100%, transparent 100%) top right no-repeat,
+                        linear-gradient(0deg, transparent calc(var(--gap-size) / 2), var(--border-color) calc(var(--gap-size) / 2), var(--border-color) calc(var(--gap-size) / 2 + var(--dash-size)), transparent calc(var(--gap-size) / 2 + var(--dash-size))) center right repeat-y,
+                        linear-gradient(0deg, var(--border-color) 100%, transparent 100%) bottom right no-repeat;
+                    background-size: var(--dash-size) var(--border-weight), calc(var(--dash-size) + var(--gap-size)) var(--border-weight), var(--dash-size) var(--border-weight), var(--border-weight) var(--dash-size), var(--border-weight) calc(var(--dash-size) + var(--gap-size)), var(--border-weight) var(--dash-size);
+                }
+    
+                &:after {
+                    display: inline-block;
+                    content: "";
+                    width: 100%;
+                }
+    
+                li {
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    background: #204E9D;
+                    text-align: left;
+                    position: relative;
+                    border-radius: 50%;
+                    margin-right: 150px;
+                    z-index: 20;
+                    transform-style: preserve-3d;
+
+                    .bg-white {
+                        position: absolute;
+                        top: -5px;
+                        left: -6px;
+                        border-radius: 50%;
+                        width: 33px;
+                        height: 33px;
+                        z-index: 1;
+                        background-color: #fff;
+                        transform: translateZ(-10px);
+                    }
+    
+                    &:nth-child(odd) .bubble {
+                        content: " ";
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        top: 49px;
+                        left: 10px;
+                        border: 17px solid;
+                        border-color: transparent transparent transparent #204e9d;
+                    }
+    
+                    &:nth-child(even) .bubble {
+                        content: " ";
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        top: -62px;
+                        left: 10px;
+                        border: 17px solid;
+                        border-color: transparent transparent transparent #204e9d;
+                    }
+    
+                    &:before {
+                        padding-top:-28px;
+                        padding-bottom:-28px;
+                        display: inline-block;
+                        content: attr(data-year);
+                        font-size: 26px;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+    
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 35px;
+                        line-height: 43px;
+                        text-align: center;
+                        letter-spacing: -2.1px;
+    
+                        color: #000000;
+                    }
+    
+                    &:nth-child(odd):before {
+                        top: -60px;
+                    }
+    
+                    &:nth-child(even):before {
+                        bottom: -60px;
+                    }
+    
+                    &:after {
+                        border-radius: 5px;
+                        color:#FFF;
+                        background: #204E9D;
+                        padding:23px;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 17px;
+                        display: inline-block;
+                        content: attr(data-text);
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    &:nth-child(odd):after {
+                        width: 247px;
+                        bottom: 0;
+                        margin-bottom: -40px;
+                        transform: translate(-10%, 100%);
+                    }
+    
+                    &:nth-child(even):after {
+                        width: 200px;
+                        top: 0;
+                        margin-top: -40px;
+                        transform: translate(-10%, -100%);
+                    }
+    
+                    @media screen and (max-width:1117px) {
+                        &:nth-child(odd):after {
+                            width: 220px;
+                        }
+                    }
+                    
+                    @media screen and (max-width:1042px) {
+                        &:nth-child(odd):after {
+                            width: 200px;
+                        }
+                    }
+                    
+                    @media screen and (max-width:996px) {
+                        &:nth-child(odd):after {
+                            transform: translate(-25%, 100%);
+                        }
+    
+                        &:nth-child(even):after {
+                            transform: translate(-25%, -100%);
+                        }
+                    }
+                }
+            }
+        }
+
+        
+        &.mobile {
+            display: none;
+
+            ul {
+                list-style-type: none;
+                margin:0;
+                padding:0;
+
+                li {
+                    h3 {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 35px;
+                        line-height: 43px;
+                        letter-spacing: -2.1px;
+    
+                        color: #000000;
+                    }
+
+                    p {
+                        border-radius: 5px;
+                        color:#FFF;
+                        background: #204E9D;
+                        padding:23px;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 17px;
+                        display: inline-block;
+                        position: relative;
+
+                        &::before {
+                            content: " ";
+                            position: absolute;
+                            width: 0;
+                            height: 0;
+                            top: -10px;
+                            left: 30px;
+                            border: 17px solid;
+                            border-color: transparent transparent transparent #204e9d;
+                        }
+                    }
+                }
+            }
+        }
+        
+        @media screen and (max-width:901px) {
+            &.desktop {
+                display: none;
+            }
+
+            &.mobile {
+                display: block;
+            }
+        }
+    }
+
+    @media screen and (max-width:901px) {
+        .sparator {
+            margin-top:50px;
+        }
+    }
+
+    .commitment-content {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            width: 830px;
+            margin-right: 15px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        a.learn-more {
+            padding:7px 28px;
+            width: 148px;
+            background-color: #204E9D;
+            color:#FFF;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            text-align: center;
+            display: inline-block;
+            border: 1px solid #204E9D;
+            &:hover{
+                color: #204E9D;
+                border: 1px solid #204E9D;
+                background-color:#FFF;
+            }
+        }
+    }
+
+    @media screen and (max-width:1072px) {
+        .commitment-content {
+            p {
+                width: 60%;
+            }
+        }
+    }
+
+    @media screen and (max-width:686px) {
+        .commitment-content {
+            flex-wrap: wrap;
+            p {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767.98px){
+    .company-timeline .commitment-content a.learn-more:hover{
+        background-color: #204e9d;
+        color: #fff;
+        border: 1px solid #204e9d;
+    }
+}

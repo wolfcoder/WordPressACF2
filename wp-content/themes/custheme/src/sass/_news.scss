@@ -1,0 +1,101 @@
+.news {
+    margin: auto;
+    max-width: 1300px;
+    padding-bottom: 79px;
+
+    .content_area {
+        max-width: 888px;
+        margin: auto;
+        margin-bottom: 80px;
+
+        h3 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 48px;
+            color: #000;
+            letter-spacing: -2.25px;
+        }
+
+        .date {
+            font-size: 16px;
+            font-weight: 700;
+            color: #204E9D;
+            text-align: center;
+            display: block;
+            margin-bottom: 19px;
+            line-height: 22.4px;
+        }
+
+        .featured_img {
+            margin-bottom: 50px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+            color: #132D5A;
+            margin-bottom: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 25.6px;
+            color: #7E7E7E;
+            margin-bottom: 33px;
+        }
+    }
+
+    .back_btn {
+        text-align: center;
+
+        a {
+            width: 216px;
+            text-transform: uppercase;
+            background: #fff;
+            color: #204E9D;
+            padding: 6px 0px;
+            font-size: 12px;
+            font-weight: 700;
+            display: block;
+            line-height: 15px;
+            margin: 0 auto;
+            border: 1px solid #204E9D;
+
+
+            &:hover {
+                background-color: #204E9D;
+                color: #fff;
+                border: 1px solid #204E9D;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .news {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+@media only screen and (max-width: 767.98px) {
+    .news {
+        padding-top: 40px;
+    }
+
+    .news .back_btn a:hover {
+        background-color: #fff;
+        color: #204e9d;
+        border: 1px solid #204e9d;
+    }
+
+
+}

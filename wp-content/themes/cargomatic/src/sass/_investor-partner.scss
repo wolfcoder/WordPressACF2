@@ -1,0 +1,32 @@
+.investor-partner {
+  position: relative;
+  padding-bottom: 40px;
+
+  &.padding-top {
+    padding-top: 75px;
+  }
+
+  .title-area {
+
+    h5 {
+      font-weight: normal;
+      font-size: 19.2px;
+      line-height: 31px;
+      text-align: center;
+      letter-spacing: -1px;
+      color: #595959;
+    }
+  }
+
+  .logo-area {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 150px;
+      margin: 40px 20px;
+    }
+  }
+}

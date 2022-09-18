@@ -1,0 +1,146 @@
+.text-half {
+  position: relative;
+  padding-top: 148px;
+  padding-bottom: 145px;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  background: #213c48;
+
+  &-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1400px;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+
+    &::after {
+      content: "";
+      background: radial-gradient(65% 65% at 50% 50%, rgba(33, 60, 72, .2) 0, #213c48 65%);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: block;
+      position: absolute;
+    }
+  }
+
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    .text-area {
+      flex: 0 0 40%;
+      max-width: 40%;
+
+      @media (max-width: 991.98px) {
+        flex: 0 0 60%;
+        max-width: 60%;
+      }
+
+      h2 {
+        color: #fff;
+        margin-bottom: 15px;
+      }
+
+      h3 {
+        font-weight: normal;
+        font-size: 19.2px;
+        line-height: 31px;
+        letter-spacing: -1px;
+        color: #FFFFFF;
+        padding-right: 10%;
+      }
+
+      .btn.btn-primary {
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .text-half {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    clip-path: none;
+    background: #213c48;
+
+    &-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 1400px;
+
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+      }
+
+      &::after {
+        content: "";
+        background: radial-gradient(65% 65% at 50% 50%, rgba(33, 60, 72, .2) 0, #213c48 65%);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: block;
+        position: absolute;
+      }
+    }
+
+    &-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 1000px;
+      max-width: 100%;
+      margin: 0 auto;
+
+      .text-area {
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        h2 {
+          color: #fff;
+          margin-bottom: 15px;
+        }
+
+        h3 {
+          font-weight: normal;
+          font-size: 19.2px;
+          line-height: 31px;
+          letter-spacing: -1px;
+          color: #FFFFFF;
+          padding-right: 10%;
+        }
+
+        .btn.btn-primary {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}

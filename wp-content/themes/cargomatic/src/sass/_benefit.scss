@@ -1,0 +1,219 @@
+.benefit {
+  position: relative;
+  background-color: #213C48;
+  padding-top: 132px;
+  padding-bottom: 100px;
+  margin-top: -70px;
+
+  &-content {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    .title-area {
+      margin-bottom: 30px;
+
+      h2 {
+        font-weight: bold;
+        font-size: 39.81px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: -1px;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+      }
+
+      h4 {
+        font-weight: normal;
+        font-size: 23.04px;
+        line-height: 37px;
+        text-align: center;
+        letter-spacing: -1px;
+        color: #FFFFFF;
+      }
+    }
+
+    .icon-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .icon-box {
+        flex: 0 0 25%;
+        max-width: 25%;
+        text-align: center;
+        padding: 25px 17px 5px;
+        transition: all .35s;
+
+        .icon-area {
+          height: 50px;
+          margin-bottom: 13px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          transition: all .35s;
+
+          img {
+            position: absolute;
+            transition: all .35s;
+
+            &.inactive {
+              opacity: 1;
+            }
+
+            &.active {
+              opacity: 0;
+            }
+          }
+        }
+
+        h5 {
+          font-size: 19.2px;
+          line-height: 25px;
+          text-align: center;
+          color: #FFFFFF;
+          transition: all .35s;
+        }
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.15);
+          transition: all .35s;
+
+          .icon-area {
+            img {
+              transition: all .35s;
+
+              &.inactive {
+                opacity: 0;
+              }
+
+              &.active {
+                opacity: 1;
+              }
+
+              transition: all .35s;
+            }
+          }
+
+          h5 {
+            color: #00B287;
+            transition: all .35s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .benefit {
+    position: relative;
+    background-color: #213C48;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 40px;
+
+    &-content {
+      width: 1000px;
+      max-width: 100%;
+      margin: 0 auto;
+
+      .title-area {
+        margin-bottom: 20px;
+
+        h2 {
+          font-weight: bold;
+          font-size: 27.65px;
+          line-height: 30px;
+          text-align: center;
+          letter-spacing: -1px;
+          color: #FFFFFF;
+          margin-bottom: 20px;
+        }
+
+        h4 {
+          font-weight: normal;
+          font-size: 19.2px;
+          line-height: 30.67px;
+          text-align: center;
+          letter-spacing: -1px;
+          color: #FFFFFF;
+        }
+      }
+
+      .icon-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .icon-box {
+          flex: 0 0 50%;
+          max-width: 50%;
+          text-align: center;
+          padding: 25px 17px 5px;
+          transition: all .35s;
+
+          .icon-area {
+            height: 50px;
+            margin-bottom: 13px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            transition: all .35s;
+
+            img {
+              position: absolute;
+              transition: all .35s;
+
+              &.inactive {
+                opacity: 1;
+              }
+
+              &.active {
+                opacity: 0;
+              }
+            }
+          }
+
+          h5 {
+            font-size: 19.2px;
+            line-height: 25px;
+            text-align: center;
+            color: #FFFFFF;
+            transition: all .35s;
+          }
+
+          &:hover {
+            cursor: pointer;
+            box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.15);
+            transition: all .35s;
+
+            .icon-area {
+              img {
+                transition: all .35s;
+
+                &.inactive {
+                  opacity: 0;
+                }
+
+                &.active {
+                  opacity: 1;
+                }
+
+                transition: all .35s;
+              }
+            }
+
+            h5 {
+              color: #00B287;
+              transition: all .35s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

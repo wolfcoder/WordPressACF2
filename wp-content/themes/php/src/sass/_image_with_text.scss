@@ -1,0 +1,123 @@
+.image_with_text {
+    margin: auto;
+    max-width: 1300px;
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: 98px;
+
+
+
+    .img-area {
+        display: none;
+    }
+
+    .text-area {
+        max-width: 454px;
+        background: #132D5A;
+        padding-top: 37px;
+        padding-left: 39px;
+        padding-bottom: 70px;
+
+        h4 {
+            font-size: 23px;
+            line-height: 48px;
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            font-style: italic;
+            color: #fff;
+            max-width: 265px;
+            line-height: 27px;
+            margin-bottom: 0px;
+        }
+    }
+
+    .img-area.desktop {
+        position: absolute;
+        width: 897px;
+        top: 47px;
+        left: 404px;
+        display: block;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &.right_img {
+        padding-top: 50px;
+        margin-bottom: 50px;
+        .img-area {
+            position: absolute;
+            width: 897px;
+            top: 0px;
+            right: 404px;
+            display: block;
+    
+            img {
+                width: 100%;
+            }
+        }
+
+        .text-area {
+            margin-left: auto;
+            padding-left: 90px;
+            padding-right: 0px;
+
+            p {
+                max-width: 302px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .image_with_text .img-area.desktop {
+        display: none;
+    }
+    .image_with_text .img-area {
+        display: block;
+    }
+
+    .image_with_text .img-area img {
+        width: 100%;
+    }
+
+    .image_with_text .text-area {
+        max-width: 100%;
+    }
+
+    .image_with_text .text-area p {
+        max-width: 90%;
+    }
+
+    .image_with_text.right_img .img-area {
+        position: unset;
+        width: 100%;
+    }
+
+    .image_with_text {
+        margin-bottom: 50px;
+    }
+
+    .image_with_text.right_img {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .image_with_text.right_img .text-area p {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .image_with_text.right_img .text-area {
+        padding-left: 40px;
+    }
+}

@@ -1,0 +1,184 @@
+.career_testimonials{
+    margin: auto;
+    max-width: 1300px;
+    box-shadow: 0px 2px 8px 3px rgb(0 0 0 / 8%);
+    -webkit-box-shadow: 0px 2px 8px 3px rgb(0 0 0 / 8%);
+    -moz-box-shadow: 0px 2px 8px 3px rgba(0,0,0,0.08);
+    display: flex;
+    position: relative;
+    padding-bottom: 67px;
+    margin-bottom: 168px;
+    max-height: 427px;
+
+    .testimonial_container {
+        width: 529px;
+        margin-left: 202px;
+        padding-top: 39px;
+        margin-right: 46px;
+
+        h3 {
+            font-size: 30px;
+            line-height: 48px;
+            color: #204E9D;
+            letter-spacing: -2.25px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .separator {
+            height: 3px;
+            width: 104px;
+            background: #204E9D;
+            margin-bottom: 14px;
+        }
+
+        .testimonials {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 1s ease;
+            -webkit-transition: opacity 1s ease;
+
+            &.slick-initialized {
+                visibility: visible !important;
+                opacity: 1 !important;    
+            }
+
+            .slick-next, .slick-prev {
+                top: 49%;
+            }
+
+            .slick-prev {
+                left: -35px;
+            }
+
+            .slick-next {
+                right: 105px;
+            }
+
+            .slick-prev:before{
+                content: '';
+                display: block;
+                height: 20px;
+                width: 20px;
+                background: url('../../images/left-icon-career.svg') no-repeat;
+            }
+        
+            .slick-next:before{
+                content: '';
+                display: block;
+                height: 20px;
+                width: 20px;
+                background: url('../../images/right-icon-career.svg') no-repeat;
+            }
+
+            .box {
+                .quote {
+                    max-width: 389px;
+
+                    .icon {
+                        img {
+                            margin: 0 auto;
+                        }
+                    }
+                    p {
+                        font-size: 18px;
+                        font-weight: 400;
+                        font-style: italic;
+                        color: #7E7E7E;
+                        margin-top: -20px;
+                        line-height: 27px;
+                    }
+                }
+    
+
+                .author {
+                    line-height: 22px;
+                    color: #132D5A;
+                    font-size: 18px;
+                    font-weight: 600;
+                    display: block;
+                    margin-bottom: 5px;
+                }
+
+                .position {
+                    display: block;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #132D5A;
+                }
+            }
+        }
+    }
+
+    .img-area {
+        width: 397px;
+        position: absolute;
+        top: 0;
+        right: 124px;
+        box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 25%);
+        -webkit-box-shadow: 5px 5px 10px 0px rgb(0 0 0 / 25%);
+        -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.25);
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1199.98px){
+    .career_testimonials .testimonial_container {
+        margin-left: 80px;
+    }
+
+    .career_testimonials .img-area {
+        right: 44px;
+    }
+
+    .career_testimonials {
+        max-height: unset;
+    }
+}
+
+@media only screen and (max-width: 991.98px){
+    .career_testimonials .testimonial_container {
+        width: 100%;
+    }
+
+    .career_testimonials {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .career_testimonials .img-area {
+        margin: 40px auto 0px;
+        position: unset;
+    }
+
+    .career_testimonials .testimonial_container .testimonials .box .quote {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 767.98px){
+    .career_testimonials .testimonial_container {
+        margin-left: 0px;
+        padding-left: 40px;
+    }
+
+    .career_testimonials .img-area {
+        width: auto;
+    }
+
+    .career_testimonials .testimonial_container .testimonials .slick-prev {
+        left: -25px;
+    }
+
+    .career_testimonials .testimonial_container .testimonials .slick-next {
+        right: 15px;
+    }
+
+    .career_testimonials .testimonial_container .testimonials .box .quote {
+        max-width: 85%;
+    }
+}

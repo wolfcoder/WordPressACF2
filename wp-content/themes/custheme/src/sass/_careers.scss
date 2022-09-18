@@ -1,0 +1,179 @@
+.careers {
+    margin: auto;
+    max-width: 1300px;
+    margin-bottom: 100px;
+
+    .text-area {
+        text-align: center;
+        max-width: 916px;
+        margin: 0 auto 62px;
+
+        h3 {
+            color: #204E9D;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 48px;
+            letter-spacing: -2.25px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .separator {
+            width: 104px;
+            height: 3px;
+            background: #204E9D;
+            margin: 0 auto 31px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    .opportunity {
+        margin-bottom: 75px;
+        .box {
+            background: #FBFBFB;
+            display: flex;
+            padding: 42px 48px 35px 30px;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.08);
+            -webkit-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.08);
+            -moz-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.08);
+
+            .title {
+                max-width: 556px;
+
+                h4 {
+                    line-height: 22px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: #132D5A;
+                    margin-bottom: 13px;
+                }
+
+                .mobile {
+                    display: none;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #7E7E7E;
+                    margin-bottom: 0px;
+                }
+            }
+
+            .text-area {
+                max-width: unset;
+                margin: 0px;
+                h5 {
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 17px;
+                    color: #132D5A;
+                    margin-bottom: 44px;
+                }
+
+                .btn-apply {
+                    width: 122px;
+                    border: 1px solid #204E9D;
+                    display: block;
+                    text-align: center;
+                    padding: 5px 0px;
+                    font-size: 13px;
+                    font-weight: 600;
+                    line-height: 16px;
+                    margin: 0 auto;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        background-color: #204E9D;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .load-more {
+        text-align: center;
+        a {
+            width: 207px;
+            text-transform: uppercase;
+            background: #204E9D;
+            color: #fff;
+            padding: 9px 0px;
+            font-size: 15px;
+            font-weight: 600;
+            display: block;
+            line-height: 18px;
+            margin: 0 auto;
+            border: 1px solid #204E9D;
+
+
+            &:hover {
+                background-color: transparent;
+                color: #204E9D;
+                border: 1px solid #204E9D;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991.98px){
+    .careers .opportunity .box .title {
+        max-width: 456px;
+    }
+}
+
+@media only screen and (max-width: 767.98px){
+    .careers {
+        padding: 20px;
+        margin-bottom: 0px;
+    }
+
+    .careers .opportunity .box {
+        display: block;
+    }
+
+    .careers .opportunity .box .title {
+        margin-bottom: 30px;
+    }
+
+    .careers .opportunity .box .text-area h5 {
+        margin-bottom: 20px;
+    }
+
+    .careers .opportunity .box .title .mobile {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        color: #132D5A;
+        margin-bottom: 13px;
+    }
+
+    .careers .opportunity .box .text-area h5 {
+        display: none;
+    }
+
+    .careers .opportunity .box .text-area .btn-apply {
+        margin: 0px;
+    }
+
+    .careers .opportunity .box .text-area .btn-apply:hover {
+        background-color: transparent;
+        color: #204e9d;
+    }
+
+    .careers .load-more a:hover {
+        background: #204e9d;
+        color: #fff;
+        border: 1px solid #204e9d;
+    }
+}

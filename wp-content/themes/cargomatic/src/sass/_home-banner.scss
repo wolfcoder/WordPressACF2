@@ -1,0 +1,211 @@
+.home-banner {
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 98px;
+  overflow: visible;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../images/geometric-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45.734%;
+    height: 82.935%;
+    top: -100px;
+    left: 0;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../images/geometric-bg.png);
+    background-repeat: no-repeat;
+    transform: scale(-1);
+    background-size: contain;
+    width: 45.734%;
+    height: 82.935%;
+    bottom: -132px;
+    right: -100px;
+    z-index: -1;
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+
+    .text-area {
+      flex: 0 0 51%;
+
+      h1 {
+        font-weight: bold;
+        font-size: 47.78px;
+        line-height: 67px;
+        letter-spacing: -1px;
+        color: #595959;
+      }
+
+      h3 {
+        font-weight: normal;
+        font-size: 27.65px;
+        line-height: 39px;
+        letter-spacing: -1px;
+        color: #595959;
+        padding-right: 10%;
+        margin-bottom: 30px;
+      }
+
+      .button-area {
+        a {
+          margin-right: 31px;
+        }
+      }
+    }
+
+    .media-area {
+      flex: 0 0 48%;
+      max-width: 48%;
+      position: relative;
+      right: -7%;
+
+      .main-media {
+        filter: drop-shadow(-15px 15px 40px rgba(0, 0, 0, 0.25));
+      }
+
+      .small-media {
+        position: absolute;
+        left: -91px;
+        bottom: -114px;
+        filter: drop-shadow(-15px 15px 40px rgba(0, 0, 0, 0.25));
+        width: 31.572%;
+      }
+    }
+  }
+
+  &-shippers {
+    text-align: center;
+    margin-top: 160px;
+
+    h4 {
+      font-weight: normal;
+      font-size: 19.2px;
+      line-height: 31px;
+      text-align: center;
+      letter-spacing: -1px;
+      color: #595959;
+      margin-bottom: 35px;
+    }
+
+    .image-area {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+
+      img {
+        max-height: 40px;
+        max-width: 150px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .home-banner {
+    padding-top: 40px;
+    padding-bottom: 55px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../../images/geometric-bg.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 170%;
+      height: 100%;
+      top: -8%;
+      left: -60%;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../../images/geometric-bg.png);
+      background-repeat: no-repeat;
+      transform: scale(-1);
+      background-size: contain;
+      width: 115%;
+      height: 100%;
+      bottom: -33%;
+      right: -42%;
+      z-index: -1;
+    }
+
+    &-content {
+      display: flex;
+      align-items: center;
+
+      .text-area {
+        flex: 0 0 100%;
+
+        h1 {
+          font-size: 39.81px;
+          line-height: 52px;
+          letter-spacing: -0.833194px;
+          margin-bottom: 20px;
+        }
+
+        h3 {
+          font-size: 23.04px;
+          line-height: 32px;
+          letter-spacing: -0.833273px;
+          color: #595959;
+          padding-right: 15%;
+          margin-bottom: 30px;
+        }
+
+        .button-area {
+          a {
+            margin-right: 31px;
+            margin-bottom: 22px;
+          }
+        }
+
+        .media-mobile {
+          filter: drop-shadow(-15px 15px 40px rgba(0, 0, 0, 0.25));
+          margin-bottom: 32px;
+        }
+      }
+
+    }
+
+    &-shippers {
+      text-align: left;
+      margin-top: 50px;
+
+      h4 {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.833333px;
+        text-align: left;
+        color: #595959;
+        margin-bottom: 25px;
+      }
+
+      .image-area {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        img {
+          max-height: 26.38px;
+          max-width: 150px;
+          margin-right: 40px;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}

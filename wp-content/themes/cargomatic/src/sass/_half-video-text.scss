@@ -1,0 +1,107 @@
+.half-video-text {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 75px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../images/geometric-bg.png);
+    transform: scale3d(-1, -1, -1);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 600px;
+    height: 750px;
+    top: 0;
+    right: -240px;
+    pointer-events: none;
+  }
+
+  .title-area {
+    margin-bottom: 50px;
+
+    h2 {
+      font-weight: bold;
+      font-size: 39.81px;
+      line-height: 50px;
+      text-align: center;
+      letter-spacing: -1px;
+      color: #595959;
+      margin-bottom: 15px;
+
+      @media (max-width: 767.98px) {
+        font-size: 27.65px;
+        line-height: 38.69px;
+      }
+    }
+
+    h5 {
+      font-weight: normal;
+      font-size: 19.2px;
+      line-height: 31px;
+      text-align: center;
+      letter-spacing: -1px;
+      color: #64727F;
+      width: 650px;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .video-text-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1000px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .video-area {
+      flex: 0 0 48.5%;
+      max-width: 48.5%;
+
+      @media (max-width: 767.98px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .embed-responsive {
+        border: 1px solid #979797;
+      }
+    }
+
+    .text-area {
+      flex: 0 0 48.5%;
+      max-width: 48.5%;
+      padding: 0 4% 0 2%;
+
+      @media (max-width: 767.98px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      h5 {
+        margin-bottom: 0px;
+        color: $green;
+      }
+
+      p {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 26px;
+        color: #595959;
+      }
+    }
+  }
+
+  .button-area {
+    margin-top: 50px;
+
+    @media (max-width: 767.98px) {
+      margin-top: 25px;
+    }
+  }
+}

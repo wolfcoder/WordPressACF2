@@ -1,0 +1,345 @@
+.service-feature {
+  position: relative;
+  background: #213C48;
+  padding-top: 132px;
+  padding-bottom: 132px;
+  clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
+  margin: -5vh 0;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../images/geometric-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 53%;
+    height: 100%;
+    top: 0;
+    left: -260px;
+    z-index: 0;
+  }
+
+  &-content {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    .title-area {
+      text-align: center;
+      margin-bottom: 75px;
+
+      h2 {
+        color: #FFFFFF;
+        margin-bottom: 10px;
+      }
+
+      h5 {
+        color: #fff;
+      }
+    }
+
+    .service-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &.four-column {
+        .service-box {
+          flex: 0 0 25%;
+          max-width: 25%;
+        }
+      }
+
+      &.three-column {
+        .service-box {
+          flex: 0 0 30%;
+          max-width: 30%;
+        }
+      }
+
+      .service-box {
+        text-align: center;
+        padding: 25px 17px 5px;
+        transition: all .35s;
+
+        .icon-area {
+          height: 50px;
+          margin-bottom: 5px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          transition: all .35s;
+
+          img {
+            position: absolute;
+            transition: all .35s;
+
+            &.inactive {
+              opacity: 1;
+            }
+
+            &.active {
+              opacity: 0;
+            }
+          }
+        }
+
+        h3 {
+          font-size: 19.2px;
+          line-height: 25px;
+          text-align: center;
+          color: #FFFFFF;
+          margin-bottom: 10.6px;
+          transition: all .35s;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 22px;
+          text-align: center;
+          color: #FFFFFF;
+          transition: all .35s;
+        }
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.15);
+          transition: all .35s;
+
+          .icon-area {
+            img {
+              transition: all .35s;
+
+              &.inactive {
+                opacity: 0;
+              }
+
+              &.active {
+                opacity: 1;
+              }
+
+              transition: all .35s;
+            }
+          }
+
+          h3,
+          p {
+            color: #00B287;
+            transition: all .35s;
+          }
+        }
+      }
+    }
+
+    .individual-cta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: 65px;
+      margin-top: 65px;
+      border-top: 1px solid #979797;
+
+      .left-area {
+        flex: 0 0 28.5%;
+        max-width: 28.5%;
+
+        @media (max-width: 991.98px) {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+
+        h2 {
+          margin-bottom: 34px;
+          color: #fff;
+        }
+      }
+
+      .right-area {
+        flex: 0 0 68.4%;
+        max-width: 68.4%;
+        padding-top: 35px;
+
+        @media (max-width: 991.98px) {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+
+        h4 {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 26px;
+          color: #00B287;
+          margin-bottom: 12px;
+        }
+
+        p {
+          font-size: 14px;
+          line-height: 26px;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .service-feature {
+    position: relative;
+    background: #213C48;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    clip-path: none;
+    margin: 0;
+    z-index: 2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../../images/geometric-bg.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 53%;
+      height: 100%;
+      top: 0;
+      left: -260px;
+      z-index: 0;
+    }
+
+    &-content {
+      width: 1000px;
+      max-width: 100%;
+      margin: 0 auto;
+
+      .title-area {
+        text-align: center;
+        margin-bottom: 35px;
+
+        h2 {
+          color: #FFFFFF;
+          margin-bottom: 10px;
+        }
+
+        h5 {
+          color: #fff;
+        }
+      }
+
+      .service-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &.four-column {
+          .service-box {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+        }
+
+        &.three-column {
+          .service-box {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+        }
+
+        .service-box {
+          text-align: center;
+          padding: 0 17px 5px;
+          transition: all .35s;
+
+          .icon-area {
+            height: 50px;
+            margin-bottom: 5px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            transition: all .35s;
+
+            img {
+              position: absolute;
+              transition: all .35s;
+
+              &.inactive {
+                opacity: 1;
+              }
+
+              &.active {
+                opacity: 0;
+              }
+            }
+          }
+
+          h3 {
+            font-size: 19.2px;
+            line-height: 25px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 10.6px;
+            transition: all .35s;
+          }
+
+          p {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            color: #FFFFFF;
+            transition: all .35s;
+          }
+        }
+      }
+
+      .individual-cta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 40px;
+        margin-top: 40px;
+        border-top: 1px solid #979797;
+
+        .left-area {
+          flex: 0 0 28.5%;
+          max-width: 28.5%;
+
+          @media (max-width: 991.98px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+
+          h2 {
+            margin-bottom: 34px;
+            color: #fff;
+          }
+        }
+
+        .right-area {
+          flex: 0 0 68.4%;
+          max-width: 68.4%;
+          padding-top: 35px;
+
+          @media (max-width: 991.98px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+
+          h4 {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 26px;
+            color: #00B287;
+            margin-bottom: 12px;
+          }
+
+          p {
+            font-size: 14px;
+            line-height: 26px;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}

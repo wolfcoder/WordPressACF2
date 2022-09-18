@@ -1,0 +1,247 @@
+.horizontal-tabs {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../images/geometric-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45.734%;
+    height: 110.935%;
+    top: 0;
+    left: -12%;
+    z-index: -1;
+  }
+
+  &-content {
+    h2 {
+      text-align: center;
+      margin-bottom: 41px;
+    }
+
+    .nav-tabs {
+      border: none;
+
+      .nav-item {
+        .nav-link {
+          font-weight: normal;
+          font-size: 19.2px;
+          line-height: 31px;
+          text-align: center;
+          letter-spacing: -1px;
+          color: #595959;
+          border: none;
+          padding-bottom: 10px;
+          background-color: transparent;
+
+          @media (max-width: 1199.98px) {
+            font-size: 16px;
+          }
+
+          &.active {
+            color: #00B287;
+            border-bottom: 2px solid $green;
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      background: #FFFFFF;
+      box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.15);
+      padding: 77px 85px 82px;
+
+      .content-area {
+        display: flex;
+        flex-wrap: wrap;
+
+        .title {
+          flex: 0 0 100%;
+          max-width: 100%;
+          font-weight: normal;
+          font-size: 27.65px;
+          line-height: 30px;
+          letter-spacing: -1px;
+          color: #595959;
+          margin-bottom: 32px;
+
+          &::after {
+            content: "";
+            height: 2px;
+            background-color: #00B287;
+            width: 161px;
+            display: block;
+            margin-top: 30px;
+          }
+        }
+
+        .text-area {
+          flex: 0 0 70%;
+          max-width: 70%;
+
+          p {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 26px;
+            color: #000000;
+          }
+        }
+
+        .button-area {
+          flex: 0 0 30%;
+          max-width: 30%;
+          text-align: right;
+
+          a {
+            margin-bottom: 32px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: 991.98px) {
+  .horizontal-tabs {
+    &.section-padding {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../../images/geometric-bg.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 562px;
+      height: 1053px;
+      top: -890px;
+      left: auto;
+      z-index: -1;
+      right: -55%;
+      transform: scale3d(-1, -1, -1);
+    }
+
+    &-content {
+      h2 {
+        text-align: left;
+        margin-bottom: 28px;
+      }
+
+      .nav-tabs {
+        display: none;
+      }
+
+      .tab-content {
+        box-shadow: none;
+        padding: 0;
+        background-color: transparent;
+
+        .tab-pane {
+          display: block;
+          opacity: 1;
+          margin-bottom: 10px;
+          background: #F6F6F6;
+          padding: 10px 20px;
+        }
+
+        .mobile-toggle-area-hrz-tabs {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 26px;
+          letter-spacing: -0.833333px;
+          color: #595959;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          min-height: 30px;
+          transition: all .35s;
+
+          span {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: -1.04167px;
+            color: #595959;
+            transform: rotate(90deg);
+            transition: all .35s;
+          }
+
+          &.active {
+            color: #00B287;
+            transition: all .35s;
+
+            span {
+              transform: rotate(90deg) scale(-1);
+              color: #00B287;
+              transition: all .35s;
+            }
+          }
+        }
+
+        .content-area {
+          display: flex;
+          flex-wrap: wrap;
+          padding-top: 20px;
+          padding-bottom: 30px;
+          display: none;
+
+          &.mobile-active {
+            display: block;
+          }
+
+          .title {
+            flex: 0 0 100%;
+            max-width: 100%;
+            font-weight: normal;
+            font-size: 23.04px;
+            line-height: 32px;
+            letter-spacing: -0.833273px;
+            color: #595959;
+            margin-bottom: 20px;
+            padding-right: 5%;
+
+            &::after {
+              display: none;
+            }
+          }
+
+          .text-area {
+            flex: 0 0 95%;
+            max-width: 95%;
+
+            p {
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 26px;
+              color: #000000;
+            }
+          }
+
+          .button-area {
+            flex: 0 0 50%;
+            max-width: 50%;
+            text-align: left;
+            margin-top: 20px;
+
+            a {
+              margin-bottom: 21px;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

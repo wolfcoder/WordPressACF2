@@ -1,0 +1,204 @@
+.inquiries {
+    margin: auto;
+    max-width: 1300px;
+    padding-bottom: 134px;
+
+    .content_area {
+        max-width: 916px;
+        margin: auto;
+
+        .text_area {
+            text-align: center;
+            margin-bottom: 60px;
+
+            h1 {
+                font-size: 30px;
+                font-weight: 500;
+                line-height: 48px;
+                letter-spacing: -2.25px;
+                color: #204E9D;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+
+            .separator {
+                width: 104px;
+                height: 3px;
+                margin: auto;
+                background: #204E9D;
+                margin-bottom: 31px;
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 30px;
+                margin-bottom: 0px;
+            }
+        }
+
+        .form_area {
+            .single_line {
+                margin-bottom: 28px;
+
+                &.add_bottom {
+                    margin-bottom: 50px;
+                }
+
+                &.submit {
+                    text-align: center;
+                    margin-bottom: 0px;
+                }
+
+                select {
+                    width: 427px;
+                    margin: auto;
+                    height: 38px;
+                    display: block;
+                    appearance: none;
+                    padding-left: 12px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #999999;
+                    line-height: 22px;
+                    border: 1px solid #999999;
+
+                    background-image: url("../../images/icon_select.svg");
+                    background-position: right center; /*Positioning*/
+                    background-repeat: no-repeat; /*Prevent showing multiple background images*/
+                    background-position-x: 402px;
+                }
+
+                textarea {
+                    height: 171px;
+                    width: 100%;
+                    display: block;
+                    appearance: none;
+                    padding-left: 12px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #999999;
+                    line-height: 22px;
+                    border: 1px solid #999999;
+                    padding-top: 18px;
+                    // border-top: 2px solid #999;
+                    resize: none;
+
+                    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        color: #999999;
+                        opacity: 1; /* Firefox */
+                    }
+                    
+                    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                        color: #999999;
+                    }
+                    
+                    &::-ms-input-placeholder { /* Microsoft Edge */
+                        color: #999999;
+                    }
+                }
+
+                input[type=submit] {
+                    width: 207px;
+                    border: 1px solid #204E9D;
+                    background: #204E9D;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    font-weight: 600;
+                    height: 34px;
+                    line-height: 18px;
+                    transition: all .5s;
+                    &:hover {
+                        border: 1px solid #204E9D;
+                        background: #fff;
+                        color: #204E9D;
+                    }
+                } 
+            }
+
+            .dual_line {
+                margin-bottom: 25px;
+                display: flex;
+                input {
+                    // max-width: 427px;
+                    width: 50%;
+                    display: block;
+                    height: 40px;
+                    display: block;
+                    appearance: none;
+                    padding-left: 12px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #999999;
+                    line-height: 22px;
+                    border: 1px solid #999999;
+                    margin-right: 40px;
+
+                    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        color: #999999;
+                        opacity: 1; /* Firefox */
+                    }
+                    
+                    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                        color: #999999;
+                    }
+                    
+                    &::-ms-input-placeholder { /* Microsoft Edge */
+                        color: #999999;
+                    }
+
+                    &:last-of-type {
+                        margin-right: 0px;
+                    }
+                }
+            }
+
+            .capcha {
+                text-align: center;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1199.98px){
+    .inquiries {
+        padding: 0px 80px 100px;
+    }
+}
+
+@media only screen and (max-width: 991.98px){
+    .inquiries {
+        padding: 0px 40px 100px;
+    }
+}
+
+@media only screen and (max-width: 767.98px){
+    .inquiries .content_area .form_area .dual_line {
+        display: block;
+    }
+
+    .inquiries .content_area .form_area .single_line select {
+        width: 100%;
+    }
+
+    .inquiries .content_area .form_area .dual_line input {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .inquiries .content_area .form_area .dual_line input:first-of-type {
+        margin-bottom: 25px;
+    }
+
+    .inquiries .content_area .form_area .single_line input[type=submit]:hover {
+        border: 1px solid #204E9D;
+        background: #204E9D;
+        color: #fff;
+    }
+
+    .inquiries .content_area .form_area .single_line select {
+        background-position-x: 95%;
+    }
+}

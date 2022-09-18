@@ -1,0 +1,179 @@
+.video_img {
+    margin: auto;
+    margin-bottom: 100px;
+    max-width: 1300px;
+    background: #FBFBFB;
+    padding-top: 26px;
+    padding-bottom: 56px;
+    box-shadow: 0px 2px 8px 3px rgba(0,0,0,0.08);
+    -webkit-box-shadow: 0px 2px 8px 3px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0px 2px 8px 3px rgba(0,0,0,0.08);
+
+    .logo_area {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .text_area {
+        max-width: 600px;
+        margin: auto;
+        margin-bottom: 50px;
+
+        h1 {
+            font-size: 23px;
+            color: #000;
+            text-align: center;
+            line-height: 32.2px;
+            margin-bottom: 18px;
+        }
+
+        .separator {
+            width: 104px;
+            background: #204E9D;
+            height: 3px;
+            margin: auto;
+        }
+    }
+
+    .video_area {
+        display: flex;
+        max-width: 917px;
+        margin: auto;
+        align-items: center;
+
+        .video_wrapper {
+            max-width: 642px;
+            margin-right: 39px;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: #132D5A;
+                opacity: 80%;
+                top: 0px;
+                left: 0px;
+            }
+
+            img {
+                max-width: 642px;
+            }
+
+            .popup {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,.75);
+                z-index: 10;
+
+                iframe {
+                    position: absolute;
+                    width: 100%;
+                    max-width: 720px;
+                    height: 500px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    padding: 10px;
+                }
+            }
+
+            .play_video {
+                position: absolute;
+                top: 50%;  /* position the top  edge of the element at the middle of the parent */
+                left: 50%; /* position the left edge of the element at the middle of the parent */
+                cursor: pointer;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .text_video {
+            h4 {
+                font-size: 16px;
+                font-weight: 600;
+                font-style: italic;
+                line-height: 24px;
+                color: #132D5A;
+                margin-bottom: 38px;
+                max-width: 220px;
+            }
+
+            a {
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 15px;
+                color: #204E9D;
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .video_img {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .video_img .video_area {
+        display: block;
+    }
+
+    .video_img .video_area .video_wrapper {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .video_img .video_area .text_video {
+        text-align: center;
+    }
+
+    .video_img .video_area .text_video h4 {
+        max-width: 642px;
+        margin: auto;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .video_img .video_area .text_video a {
+        justify-content: left;
+        max-width: 642px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .video_img {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .video_img {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .video_img .video_area .video_wrapper img {
+        max-width: 100%;
+    }
+
+    .video_img .video_area .text_video h4 {
+        text-align: left;
+    }
+
+
+}

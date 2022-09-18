@@ -1,0 +1,205 @@
+.half-list-overlap {
+  position: relative;
+  padding-top: 125px;
+  padding-bottom: 150px;
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
+  margin-top: -11vh;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../images/geometric-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 120%;
+    bottom: -315px;
+    left: -450px;
+    z-index: -1;
+  }
+
+  &-content {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .left-area {
+      flex: 0 0 40%;
+      max-width: 40%;
+
+      .title-area {
+        padding: 11px 20px 20px 0;
+        margin-right: -220px;
+        position: relative;
+        margin-top: 57px;
+
+        &::before {
+          content: "";
+          width: 50%;
+          height: 100%;
+          top: 0;
+          right: 0;
+          position: absolute;
+          background-color: #fff;
+          z-index: 1;
+        }
+
+        h2 {
+          margin-bottom: 20px;
+          z-index: 2;
+          position: relative;
+        }
+
+        h3 {
+          font-weight: normal;
+          font-size: 19.2px;
+          line-height: 31px;
+          letter-spacing: -1px;
+          color: #64727F;
+          position: relative;
+          z-index: 2;
+        }
+      }
+
+      .list-area {
+
+        ul {
+          list-style: none;
+          padding-left: 0;
+          columns: 2;
+
+          li {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 26px;
+            color: #64727F;
+
+            &::before {
+              content: ">";
+              margin-right: 3px;
+            }
+          }
+        }
+
+        a.btn {
+          margin-top: 35px;
+        }
+      }
+    }
+
+    .right-area {
+      flex: 0 0 51.4%;
+      max-width: 51.4%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .half-list-overlap {
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    clip-path: none;
+    margin: 50px auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../../images/geometric-bg.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 120%;
+      bottom: -315px;
+      left: -450px;
+      z-index: -1;
+    }
+
+    &-content {
+      width: 1000px;
+      max-width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: column-reverse;
+
+      .left-area {
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        .title-area {
+          padding: 11px 20px 20px 0;
+          margin-right: 0;
+          position: relative;
+          margin-top: 25px;
+
+          &::before {
+            display: none;
+          }
+
+          h2 {
+            margin-bottom: 10px;
+            z-index: 2;
+            position: relative;
+          }
+
+          h3 {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 25.58px;
+            letter-spacing: -1px;
+            color: #64727F;
+            position: relative;
+            z-index: 2;
+          }
+        }
+
+        .list-area {
+
+          ul {
+            list-style: none;
+            padding-left: 0;
+            columns: 2;
+
+            li {
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 26px;
+              color: #64727F;
+
+              &::before {
+                content: ">";
+                margin-right: 3px;
+              }
+            }
+          }
+
+          a.btn {
+            margin-top: 15px;
+          }
+        }
+      }
+
+      .right-area {
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

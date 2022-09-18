@@ -1,0 +1,149 @@
+.content-collapse {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 85px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../images/two-column-overlay-geomatry.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+    width: 100%;
+    transform: scale3d(-1, -1, -1);
+    height: 573px;
+    top: 250px;
+    right: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .title-area {
+    width: 1000px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    .left-area {
+      flex: 0 0 28.5%;
+      max-width: 28.5%;
+
+      @media (max-width: 1199.98px) {
+        flex: 0 0 35%;
+        max-width: 35%;
+      }
+
+      @media (max-width: 767.98px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      h3 {
+        font-weight: bold;
+        font-size: 39.81px;
+        line-height: 50px;
+        letter-spacing: -1px;
+        color: #FFFFFF;
+
+        @media (max-width: 767.98px) {
+          font-weight: 700;
+          font-size: 27.65px;
+          line-height: 38.69px;
+          text-align: center;
+          letter-spacing: -1px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    .right-area {
+      flex: 0 0 68.5%;
+      max-width: 68.5%;
+
+      @media (max-width: 1199.98px) {
+        flex: 0 0 60%;
+        max-width: 60%;
+      }
+
+      @media (max-width: 767.98px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      h5 {
+        font-weight: normal;
+        font-size: 19.2px;
+        line-height: 31px;
+        letter-spacing: -1px;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+  .collapse-area {
+    width: 685px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .collapse-box {
+      margin-bottom: 15px;
+      padding: 12.2px 25px;
+      box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.15);
+
+      .title-collapse {
+        font-weight: normal;
+        font-size: 19.2px;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #00b287;
+        padding-right: 40px;
+        position: relative;
+
+        &::after {
+          content: "";
+          background-image: url(../../images/svg/arrow-bottom.svg);
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 25px;
+          height: 11px;
+          transform: scale(1);
+          filter: grayscale(0);
+          transition: all .35s;
+          position: absolute;
+          right: 0;
+        }
+
+        &.collapsed {
+          color: #FFFFFF;
+          &::after {
+            transform: scale(-1);
+            filter: grayscale(1);
+            transition: all .35s;
+          }
+        }
+      }
+
+      .collapse-content {
+        padding-right: 15%;
+
+        p {
+          margin-top: 10px;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 26px;
+          color: #FFFFFF;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

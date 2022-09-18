@@ -1,0 +1,189 @@
+/*!
+Theme Name: cargomatic
+Theme URI: http://underscores.me/
+Author: millennialwebdevelopment.com
+Author URI: http://millennialwebdevelopment.com
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cargomatic
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+cargomatic is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+* {-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+body {
+    overflow: hidden;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0px!important;
+  background:transparent!important;
+}
+body h6 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    padding-right: 3rem;
+    color: #00b287;
+}
+
+.text-half-form .wpcf7 form .wpcf7-response-output {
+    color: #fff;
+    font-size: 13px;
+}
+
+.text-half-form .wpcf7 form .wpcf7-response-output,
+.contact-form .wpcf7 form .wpcf7-response-output {
+    color: #fff;
+    font-size: 13px;
+}
+
+.half-form-overlap .wpcf7 form .wpcf7-response-output {
+    font-size: 13px;
+}
+
+.half-form-overlap-content .left-area .form-area form p {
+    text-align: left;
+}
+
+.contact-form-content form p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-form-content form textarea {
+    max-height: 202px;
+}
+
+.get-started-form {
+    position: relative;
+    background-color: #f6f6f6;
+    margin-bottom: -80px;
+    padding-bottom: 40px;
+    overflow: visible;
+}
+
+.get-started-form .title-area {
+    margin-top: 74px;
+    width: 650px;
+    margin: 74px auto 20px;
+}
+
+.get-started-form .btn-primary {
+    margin-bottom: 74px;
+}
+
+.mfp-preloader{
+    display:none!important;
+}
+.mfp-bg.mfp-ready{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 70%);
+    z-index: 999;
+}
+.mfp-wrap{
+    position: fixed;
+    left: 50%;
+    top: 35%;
+    z-index: 9999;
+    color: #fff!important;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 500px;
+}
+.mfp-wrap a{
+    color: #fff!important;
+    text-decoration: underline!important;
+}
+.mfp-wrap button.mfp-close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: transparent;
+    border: 0;
+    font-size: 24px;
+    padding: 0;
+    line-height: 1em;
+}
+.mfp-container{
+    padding: 20px;
+    background: #00b287;
+}
+.form-container{
+    display: flex!important;
+    flex-wrap: wrap!important;
+    justify-content: justify!important;
+}
+.form-container .form_field input:not(.btn-primary), .form-container .form_field textarea {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    padding-bottom: 0;
+    border: none;
+    border-bottom: 1px solid #64727f;
+    background: 0 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 0!important;
+}
+.sign-up-form .form-area form input[type=checkbox]{
+    width:auto;
+}
+.form-container .form_field {
+    margin-bottom: 25px!important;
+    flex: 0 0 43.183%;
+    max-width: 43.183%;
+}
+.form-container .form_field.checkbox-container, .form-container .form_field.submit{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+.form-container .form_field .validation-error{
+    color: #ff0000!important;
+    font-size: 12px!important;
+}
+.form-container .form_field.dotdot{
+    display:block!important;
+}
+@media only screen and (max-width: 768px) {
+    .form-container .form_field {
+        flex: 0 0 100%;
+        max-width: 300px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .get-started-form {
+        padding-bottom: 70px;
+    }
+
+    .get-started-form .btn-primary {
+        margin-bottom: 114px;
+    }
+}

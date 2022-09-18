@@ -1,0 +1,186 @@
+.home-api {
+  position: relative;
+  padding-top: 75px;
+  margin-bottom: 133px;
+  overflow: visible;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../images/geometric-bg.png);
+    background-repeat: no-repeat;
+    transform: scale(-1);
+    background-size: contain;
+    width: 45.734%;
+    height: 82.935%;
+    top: -200px;
+    right: -150px;
+    z-index: -1;
+  }
+
+  &-content {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .media-area {
+      margin-left: 80px;
+      position: relative;
+
+      .code-area {
+        width: 52.283%;
+        padding: 27px 0 0;
+        background: #213C48;
+        box-shadow: 2px 2px 75px rgba(0, 0, 0, 0.15);
+        position: relative;
+        min-height: 481px;
+
+        pre {
+          font-family: 'Source Sans Pro', sans-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 13px;
+          line-height: 33px;
+          letter-spacing: 1px;
+          color: #FFFFFF;
+          overflow: hidden;
+
+          &:after {
+            content: "|";
+            animation: blink 500ms linear infinite alternate;
+          }
+        }
+
+      }
+
+      .image-area {
+        position: absolute;
+        left: 47%;
+        width: 47%;
+        top: 60px;
+        filter: drop-shadow(15px 15px 40px rgba(0, 0, 0, 0.25));
+      }
+
+    }
+
+    .text-area {
+      margin-top: 35px;
+      width: 50%;
+
+      h3 {
+        font-weight: normal;
+        font-size: 23.04px;
+        line-height: 37px;
+        letter-spacing: -1px;
+        color: #595959;
+        margin-bottom: 15px;
+      }
+
+      p {
+        a {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 30px;
+          color: #00B287;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .home-api {
+    padding-top: 63px;
+    margin-bottom: 90px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../../images/geometric-bg.png);
+      background-repeat: no-repeat;
+      transform: scale(1);
+      background-size: contain;
+      width: 150%;
+      height: 125%;
+      top: 0;
+      right: 0;
+      left: -60%;
+      z-index: -1;
+    }
+
+    &-content {
+      margin: 0 auto;
+
+      h2 {
+        text-align: left;
+        margin-bottom: 50px;
+      }
+
+      .media-area {
+        margin-left: 0px;
+
+        .code-area {
+          width: 55.412%;
+          padding: 10px 0;
+          background: #213C48;
+          box-shadow: none;
+          position: relative;
+          min-height: 248px;
+
+          pre {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 8px;
+            line-height: 15px;
+            letter-spacing: 1px;
+            color: #FFFFFF;
+            overflow: hidden;
+            margin-left: -20px;
+
+            &:after {
+              content: "|";
+              animation: blink 500ms linear infinite alternate;
+            }
+          }
+
+        }
+
+        .image-area {
+          left: 45%;
+          width: 53%;
+          top: -28px;
+          filter: drop-shadow(15px 15px 40px rgba(0, 0, 0, 0.25));
+        }
+
+      }
+
+      .text-area {
+        margin-top: 50px;
+        width: 100%;
+        padding-right: 12%;
+
+        h3 {
+          font-size: 19.2px;
+          line-height: 31px;
+          letter-spacing: -0.833333px;
+          color: #595959;
+          margin-bottom: 10px;
+        }
+
+        p {
+          a {
+            font-size: 13.3px;
+            line-height: 30px;
+            color: #00B287;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,384 @@
+footer {
+  position: relative;
+  background: #F6F6F6;
+  padding-top: 97px;
+  background-image: url(../../images/footer-bg.png);
+  background-size: auto 100%;
+  background-position: center right;
+  background-repeat: no-repeat;
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+
+    .footer-column {
+      flex: 0 0 21.368%;
+      max-width: 21.368%;
+      margin-right: 3.5%;
+
+      &:first-child {
+        margin-right: 11%;
+      }
+
+      &:last-child {
+        flex: 0 0 15%;
+        margin-right: 0;
+      }
+
+      h3 {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        color: #64727F;
+        margin-bottom: 25px;
+
+        a {
+          color: inherit;
+
+          &:hover {
+            color: $green;
+          }
+        }
+      }
+
+      .footer-logo {
+        margin-bottom: 23px;
+      }
+
+      .cargomatic-info {
+        margin-top: 17px;
+        width: 225px;
+        max-width: 100%;
+
+        p {
+          font-weight: 600;
+          font-size: 13.3px;
+          line-height: 21px;
+          color: #64727F;
+
+          a {
+            color: inherit;
+          }
+        }
+
+        .location {
+          position: relative;
+          padding-left: 25px;
+
+          &::before {
+            content: "";
+            background-image: url(../../images/svg/icon-location.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 15px;
+            height: 21px;
+            display: block;
+            position: absolute;
+            top: 4px;
+            left: 0;
+          }
+        }
+
+        .email {
+          position: relative;
+          padding-left: 25px;
+
+          &::before {
+            content: "";
+            background-image: url(../../images/svg/icon-email.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 15px;
+            height: 10.23px;
+            display: block;
+            position: absolute;
+            top: 5px;
+            left: 0;
+          }
+        }
+
+        .phone {
+          position: relative;
+          padding-left: 25px;
+
+          &::before {
+            content: "";
+            background-image: url(../../images/svg/icon-phone.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 15px;
+            height: 15px;
+            display: block;
+            position: absolute;
+            top: 3px;
+            left: 0;
+          }
+        }
+      }
+
+      .footer-social {
+        margin: 40px 0;
+
+        a {
+          color: #64727F;
+          font-size: 20px;
+          margin-right: 17px;
+        }
+      }
+
+      .download-apps {
+        a {
+          margin-bottom: 23.31px;
+          display: block;
+
+          img {
+            width: 175px;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-copyright {
+    background: #132328;
+    min-height: 54px;
+
+    @media (max-width: 991.98px) {
+      min-height: 100px;
+    }
+
+    p {
+      font-size: 13.3px;
+      line-height: 21px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-bottom: 0;
+
+      a {
+        color: #fff;
+      }
+
+      .separator {
+        margin: 0 15px;
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 40px;
+
+    li {
+
+      a {
+        font-weight: 600;
+        font-size: 13.3px;
+        line-height: 25px;
+        color: #64727F;
+
+        &.active {
+          color: $green;
+        }
+      }
+
+      ul {
+        padding-left: 7px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  footer {
+    padding-top: 69px;
+    background-image: none;
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 10px;
+
+      .mobile-footer-menu-toggle {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        color: #64727f;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex: 0 0 100%;
+        border-top: 1px solid #64727F;
+        padding-top: 10px;
+        margin-top: 60px;
+        cursor: pointer;
+
+        img {
+          margin-left: 15px;
+        }
+      }
+
+      .footer-column {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-right: 0;
+
+        &:first-child {
+          margin-right: 0;
+        }
+
+        &:last-child {
+          flex: 0 0 100%;
+        }
+
+        h3 {
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 25px;
+          color: #64727F;
+          margin-bottom: 15px;
+        }
+
+        .footer-logo {
+          margin-bottom: 23px;
+        }
+
+        .cargomatic-info {
+          margin-top: 17px;
+          width: 225px;
+          max-width: 100%;
+
+          p {
+            font-weight: 600;
+            font-size: 13.3px;
+            line-height: 21px;
+            color: #64727F;
+
+            a {
+              color: inherit;
+            }
+          }
+
+          .location {
+            position: relative;
+            padding-left: 25px;
+
+            &::before {
+              content: "";
+              background-image: url(../../images/svg/icon-location.svg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              width: 15px;
+              height: 21px;
+              display: block;
+              position: absolute;
+              top: 4px;
+              left: 0;
+            }
+          }
+
+          .email {
+            position: relative;
+            padding-left: 25px;
+
+            &::before {
+              content: "";
+              background-image: url(../../images/svg/icon-email.svg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              width: 15px;
+              height: 10.23px;
+              display: block;
+              position: absolute;
+              top: 5px;
+              left: 0;
+            }
+          }
+
+          .phone {
+            position: relative;
+            padding-left: 25px;
+
+            &::before {
+              content: "";
+              background-image: url(../../images/svg/icon-phone.svg);
+              background-size: cover;
+              background-repeat: no-repeat;
+              width: 15px;
+              height: 15px;
+              display: block;
+              position: absolute;
+              top: 3px;
+              left: 0;
+            }
+          }
+        }
+
+        .footer-social {
+          margin: 40px 0;
+
+          a {
+            color: #64727F;
+            font-size: 20px;
+            margin-right: 17px;
+          }
+        }
+
+        .download-apps {
+          a {
+            margin-bottom: 23.31px;
+            display: block;
+
+            img {
+              width: 175px;
+              max-width: 100%;
+            }
+          }
+        }
+
+        &.mobile-footer-menu {
+          display: none;
+
+          &.show {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .footer-copyright {
+      padding: 20px 20px 15px;
+
+      p {
+        line-height: 35px;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 20px;
+
+      li {
+
+        a {
+          font-weight: 600;
+          font-size: 13.3px;
+          line-height: 25px;
+          color: #64727F;
+
+          &.active {
+            color: $green;
+          }
+        }
+
+        ul {
+          padding-left: 7px;
+        }
+      }
+    }
+  }
+}

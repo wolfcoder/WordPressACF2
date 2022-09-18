@@ -1,0 +1,55 @@
+.manufacturing_locations {
+    margin: auto;
+    max-width: 1300px;
+    background: #FBFBFB;
+    border-radius: 5px;
+    padding-top: 39px;
+    padding-bottom: 49px;
+    box-shadow: 0px 2px 8px 3px rgba(0,0,0,0.08);
+    -webkit-box-shadow: 0px 2px 8px 3px rgba(0,0,0,0.08);
+    -moz-box-shadow: 0px 2px 8px 3px rgba(0,0,0,0.08);
+
+    
+    .text-area {
+        max-width: 916px;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 48px;
+            letter-spacing: -2.25px;
+            color: #204E9D;
+            margin-bottom: 10px;
+        }
+
+        .separator {
+            width: 104px;
+            height: 3px;
+            background: #204E9D;
+            margin-bottom: 31px;
+        }
+
+        p {
+            margin-bottom: 0px;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 400;
+            color: #7E7E7E;
+        }
+    }
+}
+
+@media only screen and (max-width: 1199.98px) {
+    .manufacturing_locations {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .manufacturing_locations {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}

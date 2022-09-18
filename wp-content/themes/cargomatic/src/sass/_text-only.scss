@@ -1,0 +1,49 @@
+.text-only {
+  position: relative;
+  background: #F6F6F6;
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
+
+  &-content {
+    padding-top: 223px;
+    padding-bottom: 125px;
+    width: 870px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    h2 {
+      font-weight: bold;
+      font-size: 39.81px;
+      line-height: 56px;
+      text-align: center;
+      letter-spacing: -1px;
+      color: #595959;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .text-only {
+    position: relative;
+    background: #F6F6F6;
+    clip-path: none;
+
+    &-content {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      width: 870px;
+      max-width: 100%;
+      margin: 0 auto;
+
+      h2 {
+        font-weight: bold;
+        font-size: 27.65px;
+        line-height: 38.69px;
+        text-align: center;
+        letter-spacing: -1px;
+        color: #595959;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

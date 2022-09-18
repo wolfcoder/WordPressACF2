@@ -1,0 +1,143 @@
+.number-highlight {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background: #F2F2F2;
+
+  @media (max-width: 991.98px) {
+    padding-top: 60px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../images/geometric-bg.png);
+    background-repeat: no-repeat;
+    transform: scale(-1);
+    background-size: contain;
+    width: 50%;
+    height: 135%;
+    bottom: -14%;
+    right: -20%;
+    z-index: 0;
+  }
+
+  &-content {
+    width: 920px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .number-area {
+      margin-top: 75px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .number-box {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 10px;
+
+        h3.number {
+          font-weight: 200;
+          font-size: 100px;
+          line-height: 56px;
+          text-align: center;
+          letter-spacing: -2.51193px;
+          color: #00B287;
+          margin-bottom: 0;
+
+          span {
+            font-size: 40px;
+            line-height: 56px;
+            font-weight: 400;
+          }
+        }
+
+        p {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 22px;
+          text-align: center;
+          color: #595959;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .number-highlight {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #F2F2F2;
+
+    &.section-padding-bottom {
+      padding-bottom: 0px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../../images/geometric-bg.png);
+      background-repeat: no-repeat;
+      transform: scale(-1);
+      background-size: contain;
+      width: 50%;
+      height: 135%;
+      bottom: -14%;
+      right: -20%;
+      z-index: 0;
+    }
+
+    &-content {
+      width: 920px;
+      max-width: 100%;
+      margin: 0 auto;
+
+      h2 {
+        margin-bottom: 20px;
+      }
+
+      .number-area {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .number-box {
+          flex: 0 0 100%;
+          max-width: 100%;
+          padding: 0 10px 20px;
+
+          h3.number {
+            font-weight: 200;
+            font-size: 100px;
+            line-height: 56px;
+            text-align: center;
+            letter-spacing: -2.51193px;
+            color: #00B287;
+            margin-bottom: 0;
+
+            span {
+              font-size: 40px;
+              line-height: 56px;
+              font-weight: 400;
+            }
+          }
+
+          p {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            color: #595959;
+          }
+        }
+      }
+    }
+  }
+}
